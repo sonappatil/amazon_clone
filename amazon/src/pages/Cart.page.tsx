@@ -1,6 +1,6 @@
 import HeaderComponent from '../features/product/components/Header.component';
-///import PaymentGateway from '../features/product/components/Payment.component';
-//import ProductComponent from '../features/product/components/Product.component';
+import PaymentGateway from '../features/product/components/Payment.component';
+import ProductComponent from '../features/product/components/Product.component';
 import { useAppSelector } from '../hooks/input/redux/hooks';
 
 
@@ -27,10 +27,10 @@ const CartPage = () => {
           marginTop: '48px',
         }}
       >
-        {/* {products.length > 0 &&
+        {products.length > 0 &&
           products.map((product) => (
             <ProductComponent key={product._id} product={product} />
-          ))} */}
+          ))}
       </div>
 
       <div style={{ width: '80%', margin: 'auto' }}>
@@ -50,7 +50,7 @@ const CartPage = () => {
           </span>
         </div>
 
-        {/* {totalQty > 0 && <PaymentGateway />} */}
+        {totalQty > 0 && <PaymentGateway />}
       </div>
     </div>
   );

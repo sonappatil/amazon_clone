@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import HeaderComponent from '../features/product/components/Header.component';
 import { useAppDispatch, useAppSelector } from '../hooks/input/redux/hooks';
 import { getProducts } from '../features/product/productSlice';
+import HeaderComponent from '../features/product/components/Header.component';
 import ProductComponent from '../features/product/components/Product.component';
 
 
